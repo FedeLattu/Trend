@@ -25,4 +25,4 @@ end_date = "2025-10-04"
 halflife = 100
 signal_smooth_halflife = 100
 slope_window = 50
-require_positive_signal = True
+require_positive_signal = False
