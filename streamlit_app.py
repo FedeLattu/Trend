@@ -37,7 +37,7 @@ st.sidebar.header("Asset Input")
 ticker = st.sidebar.text_input("Enter Asset Ticker as shown in yahoo finance")
 initial_capital = st.sidebar.number_input("Enter Initial Capital", min_value=1000, step=100, value=10000)
 
-start_date = st.sidebar.date_input("Start Date", value=pd.to_datetime(start_date))
+start_date = st.sidebar.date_input("Start Date", value=pd.to_datetime(start_date), max_value=pd.to_datetime(end_date))
 end_date = st.sidebar.date_input("End Date", value=pd.to_datetime(end_date))
 
 halflife = st.sidebar.slider("Halflife for EWMA", 10, 200, int(halflife))
